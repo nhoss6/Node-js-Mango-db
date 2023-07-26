@@ -29,6 +29,20 @@ const validationCreateUser = async (req, res, next) => {
     const user = new User(req.body)
     const errorFound = user.validateSync();
 
+    if (errorFound) {
+        const errorsList = Object.keys(errorFound.errors)
+
+        if (errorsList.length > 0) {
+            let errorObject = {}
+
+            for (const error of errorsList) {
+                console.log(error);
+                errorObject[error] = errorFound.errors[error].message
+            }
+
+            return res.status(400).send(errorObject)
+        }
+    }
     next()
 }
 

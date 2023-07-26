@@ -19,6 +19,12 @@ class UserController {
     }
   }
 
+  async getAllUsers(req, res) {
+    const users = await this.userService.getAllUsers()
+
+    res.send(users)
+  }
+
   async getById(req, res) {
     const id = req.params.id
 

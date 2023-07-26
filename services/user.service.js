@@ -22,9 +22,21 @@ class UserService {
         return token;
     }
 
+    async getAllUsers() {
+        const users = await User.find();
+        return users;
+    }
+
     async getById(_id) {
         // recup de la data via mongodb
         const user = await User.findOne({ _id }).exec();
+        return user;
+    }
+
+    async deleteById(id) {
+        // suppression d'un user en bdd avec mongoose
+        const user = await User.deleteOne({ _id: id }).exec();
+
         return user;
     }
 }

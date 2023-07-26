@@ -30,6 +30,12 @@ module.exports = function () {
         }
     );
 
+    router.get('/', validAccessToken,
+        (req, res) => {
+            userController.getAllUsers(req, res)
+        }
+    );
+
     return router
 }
 
