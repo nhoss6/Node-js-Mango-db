@@ -1,4 +1,4 @@
-# Node-js-Mango-db 🚀     <a name="readme-top"></a>
+# Node-js-Mongo-db 🚀     <a name="readme-top"></a>
 
 
 ## Description
