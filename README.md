@@ -24,7 +24,7 @@ Via les route il est possible de :
 
 1. Clonez le projet
 ```sh
-git clone 
+git clone https://github.com/nhoss6/Node-js-Mango-db/
 ```
 
 2. Installation les dépendances
@@ -54,5 +54,6 @@ Architecture MVC
 
 ## Auteurs 🎭
 
-* **REMILI Rédouane** _alias_ [@Kai](https://github.com/)
+* **REMILI Rédouane** _alias_ [@Kaitorem](https://github.com/Kaitorem)
+* **DJABI Mohamed** _alias_ [@hoss6](https://github.com/nhoss6)
 <p align="right">(<a href="#readme-top">retour en haut ⬆</a>)</p>
